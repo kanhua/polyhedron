@@ -152,8 +152,8 @@ def triangle_sign_jnp(P, Q, R, O) -> jnp.ndarray:
         (m3_0 * m1_1 - m3_1 * m1_0) * (Q[:, 2] - O[2]))
 
     # TODO: add exception handling
-    if jnp.any(result == 0):
-        raise ValueError("vertices coplanar with origin")
+    #if jnp.any(result == 0):
+    #    raise ValueError("vertices coplanar with origin")
     return result
 
 
